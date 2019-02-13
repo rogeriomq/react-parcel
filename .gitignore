@@ -1,3 +1,8 @@
-yarn.lock
 node_modules/
-.cache/
+build/
+dev/
+.cache
+yarn-error.log
+npm-debug.log
+.git
+*.orig
