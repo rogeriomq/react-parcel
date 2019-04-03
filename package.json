@@ -7,27 +7,25 @@
     "clean": "rimraf public/ .cache/",
     "start": "NODE_ENV=development rimraf public/ && parcel src/index.html -d public",
     "watch": "NODE_ENV=development rimraf public/ && parcel watch src/index.html -d public",
-    "build": "NODE_ENV=production rimraf public/ && parcel build src/index.html"
+    "build": "NODE_ENV=production yarn clean && parcel build src/index.html -d public"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "eslint": "^5.13.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
-    "parcel-bundler": "^1.12.0",
+    "parcel-bundler": "^1.12.3",
     "rimraf": "^2.6.3"
   },
   "dependencies": {
-    "babel-loader": "^8.0.5",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
