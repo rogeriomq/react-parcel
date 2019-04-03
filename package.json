@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf public/ .cache/",
-    "start": "NODE_ENV=development rimraf public/ && parcel src/index.html -d public",
-    "watch": "NODE_ENV=development rimraf public/ && parcel watch src/index.html -d public",
+    "start": "NODE_ENV=development parcel src/index.html -d public",
+    "watch": "NODE_ENV=development parcel watch src/index.html -d public",
     "build": "NODE_ENV=production yarn clean && parcel build src/index.html -d public"
   },
   "devDependencies": {
