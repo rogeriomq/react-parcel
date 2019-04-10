@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+require('./index.css')
 const version = React.version
 
-class Home extends Component {
+class Home extends React.Component {
   render () {
     return (
-      <div>
-        <h2>React {version} with Parcel bundler</h2>
+      <div className="teste">
+        <h2>React {version} with Parcel-Bundler</h2>
         <p></p>
       </div>
     )
